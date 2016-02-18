@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA0D67851BBC973F0071B767 /* libFlurry_7.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0D67841BBC973F0071B767 /* libFlurry_7.2.0.a */; };
+		DA0D67871BBC98340071B767 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0D67861BBC98340071B767 /* SystemConfiguration.framework */; };
+		DA0D67891BBC98550071B767 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0D67881BBC98550071B767 /* Security.framework */; };
+		DA0D678B1BBCA79B0071B767 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0D678A1BBCA79A0071B767 /* placeholder.png */; };
+		DA0D678E1BBCA8FC0071B767 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0D678D1BBCA8FC0071B767 /* PlaceViewController.m */; };
+		DA0D67901BBCB9A50071B767 /* placeholder2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0D678F1BBCB9A50071B767 /* placeholder2.png */; };
+		DA0EFAF21BAF53A600FBB67D /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0EFAF11BAF53A600FBB67D /* iAd.framework */; };
+		DA0EFAF41BB0A6AB00FBB67D /* madisonunionsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0EFAF31BB0A6AB00FBB67D /* madisonunionsmall.png */; };
+		DA11C5B41B9E061F001A01D6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA11C5B31B9E061F001A01D6 /* TableViewController.m */; };
+		DA11C5CE1B9E53A3001A01D6 /* annes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5B71B9E53A3001A01D6 /* annes.jpg */; };
+		DA11C5CF1B9E53A3001A01D6 /* bistro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5B81B9E53A3001A01D6 /* bistro.jpg */; };
+		DA11C5D01B9E53A3001A01D6 /* chik.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5B91B9E53A3001A01D6 /* chik.jpg */; };
+		DA11C5D11B9E53A3001A01D6 /* corner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5BA1B9E53A3001A01D6 /* corner.jpg */; };
+		DA11C5D21B9E53A3001A01D6 /* dhall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5BB1B9E53A3001A01D6 /* dhall.jpg */; };
+		DA11C5D31B9E53A3001A01D6 /* dogpound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5BC1B9E53A3001A01D6 /* dogpound.jpg */; };
+		DA11C5D41B9E53A3001A01D6 /* dunkin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5BD1B9E53A3001A01D6 /* dunkin.jpg */; };
+		DA11C5D51B9E53A3001A01D6 /* ehall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5BE1B9E53A3001A01D6 /* ehall.jpg */; };
+		DA11C5D61B9E53A3001A01D6 /* einstein.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5BF1B9E53A3001A01D6 /* einstein.jpg */; };
+		DA11C5D71B9E53A3001A01D6 /* festival.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5C01B9E53A3001A01D6 /* festival.jpg */; };
+		DA11C5D81B9E53A3001A01D6 /* freshens.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5C11B9E53A3001A01D6 /* freshens.jpg */; };
+		DA11C5D91B9E53A3001A01D6 /* grace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5C21B9E53A3001A01D6 /* grace.jpg */; };
+		DA11C5DA1B9E53A3001A01D6 /* java.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5C31B9E53A3001A01D6 /* java.jpg */; };
+		DA11C5DB1B9E53A3001A01D6 /* jemmy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5C41B9E53A3001A01D6 /* jemmy.jpg */; };
+		DA11C5DC1B9E53A3001A01D6 /* letsgo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5C51B9E53A3001A01D6 /* letsgo.jpg */; };
+		DA11C5DD1B9E53A3001A01D6 /* madisongrill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5C61B9E53A3001A01D6 /* madisongrill.jpg */; };
+		DA11C5DE1B9E53A3001A01D6 /* market1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5C71B9E53A3001A01D6 /* market1.jpg */; };
+		DA11C5DF1B9E53A3001A01D6 /* mrchips.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5C81B9E53A3001A01D6 /* mrchips.jpg */; };
+		DA11C5E01B9E53A3001A01D6 /* mrsgreens.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5C91B9E53A3001A01D6 /* mrsgreens.jpg */; };
+		DA11C5E11B9E53A3001A01D6 /* pcdukes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5CA1B9E53A3001A01D6 /* pcdukes.jpg */; };
+		DA11C5E21B9E53A3001A01D6 /* pod.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5CB1B9E53A3001A01D6 /* pod.jpg */; };
+		DA11C5E31B9E53A3001A01D6 /* topdog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5CC1B9E53A3001A01D6 /* topdog.jpg */; };
+		DA11C5E41B9E53A3001A01D6 /* starbucks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5CD1B9E53A3001A01D6 /* starbucks.jpg */; };
+		DA11C5E91B9E5870001A01D6 /* gatehouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5E81B9E5870001A01D6 /* gatehouse.jpg */; };
+		DA11C5EB1B9E5990001A01D6 /* urec.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5EA1B9E5990001A01D6 /* urec.jpeg */; };
+		DA61F4DE1BA237B500E60CC1 /* Carrier.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA61F4DD1BA237B500E60CC1 /* Carrier.jpg */; };
+		DA61F4E01BA2380600E60CC1 /* Memorial.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA61F4DF1BA2380600E60CC1 /* Memorial.jpg */; };
+		DA61F4E21BA2383B00E60CC1 /* Music.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA61F4E11BA2383B00E60CC1 /* Music.jpg */; };
+		DA61F4E41BA2386500E60CC1 /* Rose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA61F4E31BA2386500E60CC1 /* Rose.jpg */; };
+		DA61F4E71BA263BA00E60CC1 /* OrgTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA61F4E61BA263BA00E60CC1 /* OrgTableViewController.m */; };
+		DA61F4EA1BA2B6E900E60CC1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA61F4E91BA2B6E900E60CC1 /* MapViewController.m */; };
+		DA61F4EC1BA2B85900E60CC1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA61F4EB1BA2B85900E60CC1 /* MapKit.framework */; };
+		DA61F4EF1BA2BB1200E60CC1 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA61F4EE1BA2BB1200E60CC1 /* Annotation.m */; };
+		DA61F4F11BA2BC6500E60CC1 /* directions.png in Resources */ = {isa = PBXBuildFile; fileRef = DA61F4F01BA2BC6500E60CC1 /* directions.png */; };
+		DA61F4F71BA3569500E60CC1 /* parkingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA61F4F61BA3569500E60CC1 /* parkingIcon.png */; };
+		DA81B02A1B98F3DB0041AE93 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81B0291B98F3DB0041AE93 /* MainViewController.m */; };
+		DAB28E9B1B93C84F0087C690 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB28E9A1B93C84F0087C690 /* main.m */; };
+		DAB28E9E1B93C84F0087C690 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB28E9D1B93C84F0087C690 /* AppDelegate.m */; };
+		DAB28EA11B93C84F0087C690 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB28EA01B93C84F0087C690 /* ViewController.m */; };
+		DAB28EA41B93C84F0087C690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB28EA21B93C84F0087C690 /* Main.storyboard */; };
+		DAB28EA61B93C84F0087C690 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB28EA51B93C84F0087C690 /* Images.xcassets */; };
+		DAB28EA91B93C84F0087C690 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB28EA71B93C84F0087C690 /* LaunchScreen.xib */; };
+		DAB28EB51B93C84F0087C690 /* MyMadisonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB28EB41B93C84F0087C690 /* MyMadisonTests.m */; };
+		DAB28EC01B9525640087C690 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB28EBF1B9525640087C690 /* WebViewController.m */; };
+		DAE11D251B9D581A002DB905 /* bull1.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE11D231B9D581A002DB905 /* bull1.png */; };
+		DAE11D261B9D581A002DB905 /* bull2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE11D241B9D581A002DB905 /* bull2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAB28EAF1B93C84F0087C690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB28E8D1B93C84F0087C690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB28E941B93C84F0087C690;
+			remoteInfo = MyMadison;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA0D67821BBC973F0071B767 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		DA0D67831BBC973F0071B767 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
+		DA0D67841BBC973F0071B767 /* libFlurry_7.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.2.0.a; sourceTree = "<group>"; };
+		DA0D67861BBC98340071B767 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DA0D67881BBC98550071B767 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DA0D678A1BBCA79A0071B767 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		DA0D678C1BBCA8FC0071B767 /* PlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
+		DA0D678D1BBCA8FC0071B767 /* PlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
+		DA0D678F1BBCB9A50071B767 /* placeholder2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder2.png; sourceTree = "<group>"; };
+		DA0EFAF11BAF53A600FBB67D /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		DA0EFAF31BB0A6AB00FBB67D /* madisonunionsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madisonunionsmall.png; sourceTree = "<group>"; };
+		DA11C5B21B9E061F001A01D6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		DA11C5B31B9E061F001A01D6 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		DA11C5B71B9E53A3001A01D6 /* annes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = annes.jpg; sourceTree = "<group>"; };
+		DA11C5B81B9E53A3001A01D6 /* bistro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bistro.jpg; sourceTree = "<group>"; };
+		DA11C5B91B9E53A3001A01D6 /* chik.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chik.jpg; sourceTree = "<group>"; };
+		DA11C5BA1B9E53A3001A01D6 /* corner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corner.jpg; sourceTree = "<group>"; };
+		DA11C5BB1B9E53A3001A01D6 /* dhall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dhall.jpg; sourceTree = "<group>"; };
+		DA11C5BC1B9E53A3001A01D6 /* dogpound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dogpound.jpg; sourceTree = "<group>"; };
+		DA11C5BD1B9E53A3001A01D6 /* dunkin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dunkin.jpg; sourceTree = "<group>"; };
+		DA11C5BE1B9E53A3001A01D6 /* ehall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ehall.jpg; sourceTree = "<group>"; };
+		DA11C5BF1B9E53A3001A01D6 /* einstein.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = einstein.jpg; sourceTree = "<group>"; };
+		DA11C5C01B9E53A3001A01D6 /* festival.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = festival.jpg; sourceTree = "<group>"; };
+		DA11C5C11B9E53A3001A01D6 /* freshens.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = freshens.jpg; sourceTree = "<group>"; };
+		DA11C5C21B9E53A3001A01D6 /* grace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grace.jpg; sourceTree = "<group>"; };
+		DA11C5C31B9E53A3001A01D6 /* java.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = java.jpg; sourceTree = "<group>"; };
+		DA11C5C41B9E53A3001A01D6 /* jemmy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jemmy.jpg; sourceTree = "<group>"; };
+		DA11C5C51B9E53A3001A01D6 /* letsgo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = letsgo.jpg; sourceTree = "<group>"; };
+		DA11C5C61B9E53A3001A01D6 /* madisongrill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = madisongrill.jpg; sourceTree = "<group>"; };
+		DA11C5C71B9E53A3001A01D6 /* market1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market1.jpg; sourceTree = "<group>"; };
+		DA11C5C81B9E53A3001A01D6 /* mrchips.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mrchips.jpg; sourceTree = "<group>"; };
+		DA11C5C91B9E53A3001A01D6 /* mrsgreens.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mrsgreens.jpg; sourceTree = "<group>"; };
+		DA11C5CA1B9E53A3001A01D6 /* pcdukes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pcdukes.jpg; sourceTree = "<group>"; };
+		DA11C5CB1B9E53A3001A01D6 /* pod.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pod.jpg; sourceTree = "<group>"; };
+		DA11C5CC1B9E53A3001A01D6 /* topdog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = topdog.jpg; sourceTree = "<group>"; };
+		DA11C5CD1B9E53A3001A01D6 /* starbucks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starbucks.jpg; sourceTree = "<group>"; };
+		DA11C5E81B9E5870001A01D6 /* gatehouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gatehouse.jpg; sourceTree = "<group>"; };
+		DA11C5EA1B9E5990001A01D6 /* urec.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = urec.jpeg; sourceTree = "<group>"; };
+		DA61F4DD1BA237B500E60CC1 /* Carrier.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Carrier.jpg; sourceTree = "<group>"; };
+		DA61F4DF1BA2380600E60CC1 /* Memorial.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Memorial.jpg; sourceTree = "<group>"; };
+		DA61F4E11BA2383B00E60CC1 /* Music.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Music.jpg; sourceTree = "<group>"; };
+		DA61F4E31BA2386500E60CC1 /* Rose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rose.jpg; sourceTree = "<group>"; };
+		DA61F4E51BA263BA00E60CC1 /* OrgTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgTableViewController.h; sourceTree = "<group>"; };
+		DA61F4E61BA263BA00E60CC1 /* OrgTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgTableViewController.m; sourceTree = "<group>"; };
+		DA61F4E81BA2B6E900E60CC1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		DA61F4E91BA2B6E900E60CC1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		DA61F4EB1BA2B85900E60CC1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DA61F4ED1BA2BB1200E60CC1 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		DA61F4EE1BA2BB1200E60CC1 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		DA61F4F01BA2BC6500E60CC1 /* directions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = directions.png; sourceTree = "<group>"; };
+		DA61F4F61BA3569500E60CC1 /* parkingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parkingIcon.png; sourceTree = "<group>"; };
+		DA81B0281B98F3DB0041AE93 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DA81B0291B98F3DB0041AE93 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DAB28E951B93C84F0087C690 /* Madison Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Madison Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB28E991B93C84F0087C690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB28E9A1B93C84F0087C690 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAB28E9C1B93C84F0087C690 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAB28E9D1B93C84F0087C690 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAB28E9F1B93C84F0087C690 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAB28EA01B93C84F0087C690 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAB28EA31B93C84F0087C690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAB28EA51B93C84F0087C690 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DAB28EA81B93C84F0087C690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DAB28EAE1B93C84F0087C690 /* Madison Mobile.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Madison Mobile.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB28EB31B93C84F0087C690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB28EB41B93C84F0087C690 /* MyMadisonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMadisonTests.m; sourceTree = "<group>"; };
+		DAB28EBE1B9525640087C690 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		DAB28EBF1B9525640087C690 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		DAE11D231B9D581A002DB905 /* bull1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bull1.png; sourceTree = "<group>"; };
+		DAE11D241B9D581A002DB905 /* bull2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bull2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAB28E921B93C84F0087C690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0D67891BBC98550071B767 /* Security.framework in Frameworks */,
+				DA0D67871BBC98340071B767 /* SystemConfiguration.framework in Frameworks */,
+				DA0EFAF21BAF53A600FBB67D /* iAd.framework in Frameworks */,
+				DA0D67851BBC973F0071B767 /* libFlurry_7.2.0.a in Frameworks */,
+				DA61F4EC1BA2B85900E60CC1 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB28EAB1B93C84F0087C690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA11C5E51B9E540E001A01D6 /* Dining */ = {
+			isa = PBXGroup;
+			children = (
+				DA11C5B71B9E53A3001A01D6 /* annes.jpg */,
+				DA11C5B81B9E53A3001A01D6 /* bistro.jpg */,
+				DA11C5B91B9E53A3001A01D6 /* chik.jpg */,
+				DA11C5BA1B9E53A3001A01D6 /* corner.jpg */,
+				DA11C5BB1B9E53A3001A01D6 /* dhall.jpg */,
+				DA11C5BC1B9E53A3001A01D6 /* dogpound.jpg */,
+				DA11C5BD1B9E53A3001A01D6 /* dunkin.jpg */,
+				DA11C5BE1B9E53A3001A01D6 /* ehall.jpg */,
+				DA11C5BF1B9E53A3001A01D6 /* einstein.jpg */,
+				DA11C5C01B9E53A3001A01D6 /* festival.jpg */,
+				DA11C5C11B9E53A3001A01D6 /* freshens.jpg */,
+				DA11C5C21B9E53A3001A01D6 /* grace.jpg */,
+				DA11C5C31B9E53A3001A01D6 /* java.jpg */,
+				DA11C5C41B9E53A3001A01D6 /* jemmy.jpg */,
+				DA11C5C51B9E53A3001A01D6 /* letsgo.jpg */,
+				DA11C5C61B9E53A3001A01D6 /* madisongrill.jpg */,
+				DA11C5C71B9E53A3001A01D6 /* market1.jpg */,
+				DA11C5C81B9E53A3001A01D6 /* mrchips.jpg */,
+				DA11C5C91B9E53A3001A01D6 /* mrsgreens.jpg */,
+				DA11C5CA1B9E53A3001A01D6 /* pcdukes.jpg */,
+				DA11C5CB1B9E53A3001A01D6 /* pod.jpg */,
+				DA11C5CC1B9E53A3001A01D6 /* topdog.jpg */,
+				DA11C5CD1B9E53A3001A01D6 /* starbucks.jpg */,
+			);
+			name = Dining;
+			sourceTree = "<group>";
+		};
+		DAB28E8C1B93C84F0087C690 = {
+			isa = PBXGroup;
+			children = (
+				DA0D67881BBC98550071B767 /* Security.framework */,
+				DA0D67861BBC98340071B767 /* SystemConfiguration.framework */,
+				DA0D67821BBC973F0071B767 /* Flurry.h */,
+				DA0D67831BBC973F0071B767 /* FlurryWatch.h */,
+				DA0D67841BBC973F0071B767 /* libFlurry_7.2.0.a */,
+				DA0EFAF11BAF53A600FBB67D /* iAd.framework */,
+				DA61F4EB1BA2B85900E60CC1 /* MapKit.framework */,
+				DA61F4DD1BA237B500E60CC1 /* Carrier.jpg */,
+				DA0EFAF31BB0A6AB00FBB67D /* madisonunionsmall.png */,
+				DA61F4DF1BA2380600E60CC1 /* Memorial.jpg */,
+				DA61F4F01BA2BC6500E60CC1 /* directions.png */,
+				DA61F4F61BA3569500E60CC1 /* parkingIcon.png */,
+				DA0D678A1BBCA79A0071B767 /* placeholder.png */,
+				DA0D678F1BBCB9A50071B767 /* placeholder2.png */,
+				DA61F4E11BA2383B00E60CC1 /* Music.jpg */,
+				DA61F4E31BA2386500E60CC1 /* Rose.jpg */,
+				DA11C5E51B9E540E001A01D6 /* Dining */,
+				DA11C5E81B9E5870001A01D6 /* gatehouse.jpg */,
+				DA11C5EA1B9E5990001A01D6 /* urec.jpeg */,
+				DAE11D231B9D581A002DB905 /* bull1.png */,
+				DAE11D241B9D581A002DB905 /* bull2.png */,
+				DAB28E971B93C84F0087C690 /* MyMadison */,
+				DAB28EB11B93C84F0087C690 /* MyMadisonTests */,
+				DAB28E961B93C84F0087C690 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAB28E961B93C84F0087C690 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAB28E951B93C84F0087C690 /* Madison Mobile.app */,
+				DAB28EAE1B93C84F0087C690 /* Madison Mobile.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB28E971B93C84F0087C690 /* MyMadison */ = {
+			isa = PBXGroup;
+			children = (
+				DAB28E9C1B93C84F0087C690 /* AppDelegate.h */,
+				DAB28E9D1B93C84F0087C690 /* AppDelegate.m */,
+				DAB28E9F1B93C84F0087C690 /* ViewController.h */,
+				DAB28EA01B93C84F0087C690 /* ViewController.m */,
+				DAB28EA21B93C84F0087C690 /* Main.storyboard */,
+				DA61F4E81BA2B6E900E60CC1 /* MapViewController.h */,
+				DA61F4E91BA2B6E900E60CC1 /* MapViewController.m */,
+				DA61F4ED1BA2BB1200E60CC1 /* Annotation.h */,
+				DA61F4EE1BA2BB1200E60CC1 /* Annotation.m */,
+				DA61F4E51BA263BA00E60CC1 /* OrgTableViewController.h */,
+				DA61F4E61BA263BA00E60CC1 /* OrgTableViewController.m */,
+				DA11C5B21B9E061F001A01D6 /* TableViewController.h */,
+				DA11C5B31B9E061F001A01D6 /* TableViewController.m */,
+				DA81B0281B98F3DB0041AE93 /* MainViewController.h */,
+				DA81B0291B98F3DB0041AE93 /* MainViewController.m */,
+				DAB28EBE1B9525640087C690 /* WebViewController.h */,
+				DAB28EBF1B9525640087C690 /* WebViewController.m */,
+				DA0D678C1BBCA8FC0071B767 /* PlaceViewController.h */,
+				DA0D678D1BBCA8FC0071B767 /* PlaceViewController.m */,
+				DAB28EA51B93C84F0087C690 /* Images.xcassets */,
+				DAB28EA71B93C84F0087C690 /* LaunchScreen.xib */,
+				DAB28E981B93C84F0087C690 /* Supporting Files */,
+			);
+			path = MyMadison;
+			sourceTree = "<group>";
+		};
+		DAB28E981B93C84F0087C690 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAB28E991B93C84F0087C690 /* Info.plist */,
+				DAB28E9A1B93C84F0087C690 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAB28EB11B93C84F0087C690 /* MyMadisonTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB28EB41B93C84F0087C690 /* MyMadisonTests.m */,
+				DAB28EB21B93C84F0087C690 /* Supporting Files */,
+			);
+			path = MyMadisonTests;
+			sourceTree = "<group>";
+		};
+		DAB28EB21B93C84F0087C690 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAB28EB31B93C84F0087C690 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAB28E941B93C84F0087C690 /* Madison Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB28EB81B93C84F0087C690 /* Build configuration list for PBXNativeTarget "Madison Mobile" */;
+			buildPhases = (
+				DAB28E911B93C84F0087C690 /* Sources */,
+				DAB28E921B93C84F0087C690 /* Frameworks */,
+				DAB28E931B93C84F0087C690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Madison Mobile";
+			productName = MyMadison;
+			productReference = DAB28E951B93C84F0087C690 /* Madison Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAB28EAD1B93C84F0087C690 /* Madison MobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB28EBB1B93C84F0087C690 /* Build configuration list for PBXNativeTarget "Madison MobileTests" */;
+			buildPhases = (
+				DAB28EAA1B93C84F0087C690 /* Sources */,
+				DAB28EAB1B93C84F0087C690 /* Frameworks */,
+				DAB28EAC1B93C84F0087C690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB28EB01B93C84F0087C690 /* PBXTargetDependency */,
+			);
+			name = "Madison MobileTests";
+			productName = MyMadisonTests;
+			productReference = DAB28EAE1B93C84F0087C690 /* Madison Mobile.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAB28E8D1B93C84F0087C690 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Paul Dippold";
+				TargetAttributes = {
+					DAB28E941B93C84F0087C690 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2RHGHNZ58B;
+					};
+					DAB28EAD1B93C84F0087C690 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = DAB28E941B93C84F0087C690;
+					};
+				};
+			};
+			buildConfigurationList = DAB28E901B93C84F0087C690 /* Build configuration list for PBXProject "Madison Mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAB28E8C1B93C84F0087C690;
+			productRefGroup = DAB28E961B93C84F0087C690 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAB28E941B93C84F0087C690 /* Madison Mobile */,
+				DAB28EAD1B93C84F0087C690 /* Madison MobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAB28E931B93C84F0087C690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA11C5E01B9E53A3001A01D6 /* mrsgreens.jpg in Resources */,
+				DA11C5E11B9E53A3001A01D6 /* pcdukes.jpg in Resources */,
+				DA11C5D01B9E53A3001A01D6 /* chik.jpg in Resources */,
+				DA11C5DA1B9E53A3001A01D6 /* java.jpg in Resources */,
+				DA11C5D91B9E53A3001A01D6 /* grace.jpg in Resources */,
+				DA11C5DE1B9E53A3001A01D6 /* market1.jpg in Resources */,
+				DA11C5D61B9E53A3001A01D6 /* einstein.jpg in Resources */,
+				DA11C5D11B9E53A3001A01D6 /* corner.jpg in Resources */,
+				DA11C5E91B9E5870001A01D6 /* gatehouse.jpg in Resources */,
+				DAB28EA41B93C84F0087C690 /* Main.storyboard in Resources */,
+				DA11C5DD1B9E53A3001A01D6 /* madisongrill.jpg in Resources */,
+				DA11C5CE1B9E53A3001A01D6 /* annes.jpg in Resources */,
+				DAE11D251B9D581A002DB905 /* bull1.png in Resources */,
+				DA11C5D71B9E53A3001A01D6 /* festival.jpg in Resources */,
+				DAB28EA91B93C84F0087C690 /* LaunchScreen.xib in Resources */,
+				DA11C5E41B9E53A3001A01D6 /* starbucks.jpg in Resources */,
+				DA11C5E21B9E53A3001A01D6 /* pod.jpg in Resources */,
+				DA11C5DF1B9E53A3001A01D6 /* mrchips.jpg in Resources */,
+				DAB28EA61B93C84F0087C690 /* Images.xcassets in Resources */,
+				DA61F4E41BA2386500E60CC1 /* Rose.jpg in Resources */,
+				DA61F4F71BA3569500E60CC1 /* parkingIcon.png in Resources */,
+				DA0EFAF41BB0A6AB00FBB67D /* madisonunionsmall.png in Resources */,
+				DA11C5DC1B9E53A3001A01D6 /* letsgo.jpg in Resources */,
+				DA61F4DE1BA237B500E60CC1 /* Carrier.jpg in Resources */,
+				DA0D67901BBCB9A50071B767 /* placeholder2.png in Resources */,
+				DA11C5D81B9E53A3001A01D6 /* freshens.jpg in Resources */,
+				DA11C5EB1B9E5990001A01D6 /* urec.jpeg in Resources */,
+				DA61F4E01BA2380600E60CC1 /* Memorial.jpg in Resources */,
+				DA11C5D51B9E53A3001A01D6 /* ehall.jpg in Resources */,
+				DA11C5D21B9E53A3001A01D6 /* dhall.jpg in Resources */,
+				DA0D678B1BBCA79B0071B767 /* placeholder.png in Resources */,
+				DA11C5CF1B9E53A3001A01D6 /* bistro.jpg in Resources */,
+				DA61F4F11BA2BC6500E60CC1 /* directions.png in Resources */,
+				DA11C5E31B9E53A3001A01D6 /* topdog.jpg in Resources */,
+				DA11C5D31B9E53A3001A01D6 /* dogpound.jpg in Resources */,
+				DAE11D261B9D581A002DB905 /* bull2.png in Resources */,
+				DA61F4E21BA2383B00E60CC1 /* Music.jpg in Resources */,
+				DA11C5DB1B9E53A3001A01D6 /* jemmy.jpg in Resources */,
+				DA11C5D41B9E53A3001A01D6 /* dunkin.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB28EAC1B93C84F0087C690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAB28E911B93C84F0087C690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB28EA11B93C84F0087C690 /* ViewController.m in Sources */,
+				DA11C5B41B9E061F001A01D6 /* TableViewController.m in Sources */,
+				DA0D678E1BBCA8FC0071B767 /* PlaceViewController.m in Sources */,
+				DAB28E9E1B93C84F0087C690 /* AppDelegate.m in Sources */,
+				DA61F4EF1BA2BB1200E60CC1 /* Annotation.m in Sources */,
+				DA61F4EA1BA2B6E900E60CC1 /* MapViewController.m in Sources */,
+				DAB28E9B1B93C84F0087C690 /* main.m in Sources */,
+				DA81B02A1B98F3DB0041AE93 /* MainViewController.m in Sources */,
+				DA61F4E71BA263BA00E60CC1 /* OrgTableViewController.m in Sources */,
+				DAB28EC01B9525640087C690 /* WebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB28EAA1B93C84F0087C690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB28EB51B93C84F0087C690 /* MyMadisonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAB28EB01B93C84F0087C690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB28E941B93C84F0087C690 /* Madison Mobile */;
+			targetProxy = DAB28EAF1B93C84F0087C690 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAB28EA21B93C84F0087C690 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB28EA31B93C84F0087C690 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAB28EA71B93C84F0087C690 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB28EA81B93C84F0087C690 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAB28EB61B93C84F0087C690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAB28EB71B93C84F0087C690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAB28EB91B93C84F0087C690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MyMadison/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paool.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Madison Mobile";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		DAB28EBA1B93C84F0087C690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MyMadison/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paool.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Madison Mobile";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		DAB28EBC1B93C84F0087C690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyMadisonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paool.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Madison Mobile";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Madison Mobile.app/Madison Mobile";
+			};
+			name = Debug;
+		};
+		DAB28EBD1B93C84F0087C690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MyMadisonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paool.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Madison Mobile";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Madison Mobile.app/Madison Mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAB28E901B93C84F0087C690 /* Build configuration list for PBXProject "Madison Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB28EB61B93C84F0087C690 /* Debug */,
+				DAB28EB71B93C84F0087C690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB28EB81B93C84F0087C690 /* Build configuration list for PBXNativeTarget "Madison Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB28EB91B93C84F0087C690 /* Debug */,
+				DAB28EBA1B93C84F0087C690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB28EBB1B93C84F0087C690 /* Build configuration list for PBXNativeTarget "Madison MobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB28EBC1B93C84F0087C690 /* Debug */,
+				DAB28EBD1B93C84F0087C690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAB28E8D1B93C84F0087C690 /* Project object */;
+}
