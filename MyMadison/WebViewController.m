@@ -26,12 +26,18 @@
     
     if (connect == NULL) {
         self.navigationItem.title = @"Login";
-        UIAlertView *alert3 = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                         message:@"No internet Connection"
-                                                        delegate:self
-                                               cancelButtonTitle:@"OK"
-                                               otherButtonTitles:nil];
-        [alert3 show];
+        UIAlertController *alert =   [UIAlertController
+                                      alertControllerWithTitle:@"No Internet Connation"
+                                      message:nil
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel
+                                                       handler:^(UIAlertAction * action) {
+                                                           [alert dismissViewControllerAnimated:YES completion:nil];
+                                                       }];
+        [alert addAction:cancel];
+        
+        [self presentViewController:alert animated:YES completion:nil];
     } else{
     [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://mymadison.jmu.edu/psp/pprd/JMU/CUST/h/?tab=DEFAULT"]]];
     [web setDelegate:self];

@@ -251,23 +251,29 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSArray *alertArray;
     if (indexPath.section == 0 ) {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hours" message:[diningArrayh objectAtIndex:indexPath.row]  delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-    alert.alertViewStyle = UIAlertViewStyleDefault;
-    [alert show];
+        alertArray = diningArrayh;
     } else if (indexPath.section == 1 ) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hours" message:[recreationArrayh objectAtIndex:indexPath.row]  delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-        alert.alertViewStyle = UIAlertViewStyleDefault;
-        [alert show];
+        alertArray = recreationArrayh;
     } else if (indexPath.section == 2 ) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hours" message:[libraryArrayh objectAtIndex:indexPath.row] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-        alert.alertViewStyle = UIAlertViewStyleDefault;
-        [alert show];
+        alertArray = libraryArrayh;
     } else if (indexPath.section == 3 ) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hours" message:[mailArrayh objectAtIndex:indexPath.row] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-        alert.alertViewStyle = UIAlertViewStyleDefault;
-        [alert show];
+        alertArray = mailArrayh;
     }
+    
+    UIAlertController *alert =   [UIAlertController
+                                  alertControllerWithTitle:@"Hours"
+                                  message:[alertArray objectAtIndex:indexPath.row]
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel
+                                                   handler:^(UIAlertAction * action) {
+                                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                                   }];
+    [alert addAction:cancel];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 

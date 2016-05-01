@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA0D67851BBC973F0071B767 /* libFlurry_7.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0D67841BBC973F0071B767 /* libFlurry_7.2.0.a */; };
 		DA0D67871BBC98340071B767 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0D67861BBC98340071B767 /* SystemConfiguration.framework */; };
 		DA0D67891BBC98550071B767 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0D67881BBC98550071B767 /* Security.framework */; };
 		DA0D678B1BBCA79B0071B767 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0D678A1BBCA79A0071B767 /* placeholder.png */; };
 		DA0D678E1BBCA8FC0071B767 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0D678D1BBCA8FC0071B767 /* PlaceViewController.m */; };
 		DA0D67901BBCB9A50071B767 /* placeholder2.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0D678F1BBCB9A50071B767 /* placeholder2.png */; };
-		DA0EFAF21BAF53A600FBB67D /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0EFAF11BAF53A600FBB67D /* iAd.framework */; };
 		DA0EFAF41BB0A6AB00FBB67D /* madisonunionsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0EFAF31BB0A6AB00FBB67D /* madisonunionsmall.png */; };
 		DA11C5B41B9E061F001A01D6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA11C5B31B9E061F001A01D6 /* TableViewController.m */; };
 		DA11C5CE1B9E53A3001A01D6 /* annes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5B71B9E53A3001A01D6 /* annes.jpg */; };
@@ -75,16 +73,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA0D67821BBC973F0071B767 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		DA0D67831BBC973F0071B767 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
-		DA0D67841BBC973F0071B767 /* libFlurry_7.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.2.0.a; sourceTree = "<group>"; };
 		DA0D67861BBC98340071B767 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DA0D67881BBC98550071B767 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DA0D678A1BBCA79A0071B767 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		DA0D678C1BBCA8FC0071B767 /* PlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
 		DA0D678D1BBCA8FC0071B767 /* PlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
 		DA0D678F1BBCB9A50071B767 /* placeholder2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder2.png; sourceTree = "<group>"; };
-		DA0EFAF11BAF53A600FBB67D /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		DA0EFAF31BB0A6AB00FBB67D /* madisonunionsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madisonunionsmall.png; sourceTree = "<group>"; };
 		DA11C5B21B9E061F001A01D6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		DA11C5B31B9E061F001A01D6 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
@@ -154,8 +148,6 @@
 			files = (
 				DA0D67891BBC98550071B767 /* Security.framework in Frameworks */,
 				DA0D67871BBC98340071B767 /* SystemConfiguration.framework in Frameworks */,
-				DA0EFAF21BAF53A600FBB67D /* iAd.framework in Frameworks */,
-				DA0D67851BBC973F0071B767 /* libFlurry_7.2.0.a in Frameworks */,
 				DA61F4EC1BA2B85900E60CC1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,7 +162,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA11C5E51B9E540E001A01D6 /* Dining */ = {
+		DA11C5E51B9E540E001A01D6 /* Dining Images */ = {
 			isa = PBXGroup;
 			children = (
 				DA11C5B71B9E53A3001A01D6 /* annes.jpg */,
@@ -197,19 +189,12 @@
 				DA11C5CC1B9E53A3001A01D6 /* topdog.jpg */,
 				DA11C5CD1B9E53A3001A01D6 /* starbucks.jpg */,
 			);
-			name = Dining;
+			name = "Dining Images";
 			sourceTree = "<group>";
 		};
-		DAB28E8C1B93C84F0087C690 = {
+		DA30757E1CD59F4200A936B9 /* Other Images */ = {
 			isa = PBXGroup;
 			children = (
-				DA0D67881BBC98550071B767 /* Security.framework */,
-				DA0D67861BBC98340071B767 /* SystemConfiguration.framework */,
-				DA0D67821BBC973F0071B767 /* Flurry.h */,
-				DA0D67831BBC973F0071B767 /* FlurryWatch.h */,
-				DA0D67841BBC973F0071B767 /* libFlurry_7.2.0.a */,
-				DA0EFAF11BAF53A600FBB67D /* iAd.framework */,
-				DA61F4EB1BA2B85900E60CC1 /* MapKit.framework */,
 				DA61F4DD1BA237B500E60CC1 /* Carrier.jpg */,
 				DA0EFAF31BB0A6AB00FBB67D /* madisonunionsmall.png */,
 				DA61F4DF1BA2380600E60CC1 /* Memorial.jpg */,
@@ -219,11 +204,22 @@
 				DA0D678F1BBCB9A50071B767 /* placeholder2.png */,
 				DA61F4E11BA2383B00E60CC1 /* Music.jpg */,
 				DA61F4E31BA2386500E60CC1 /* Rose.jpg */,
-				DA11C5E51B9E540E001A01D6 /* Dining */,
 				DA11C5E81B9E5870001A01D6 /* gatehouse.jpg */,
 				DA11C5EA1B9E5990001A01D6 /* urec.jpeg */,
 				DAE11D231B9D581A002DB905 /* bull1.png */,
 				DAE11D241B9D581A002DB905 /* bull2.png */,
+			);
+			name = "Other Images";
+			sourceTree = "<group>";
+		};
+		DAB28E8C1B93C84F0087C690 = {
+			isa = PBXGroup;
+			children = (
+				DA0D67881BBC98550071B767 /* Security.framework */,
+				DA0D67861BBC98340071B767 /* SystemConfiguration.framework */,
+				DA61F4EB1BA2B85900E60CC1 /* MapKit.framework */,
+				DA30757E1CD59F4200A936B9 /* Other Images */,
+				DA11C5E51B9E540E001A01D6 /* Dining Images */,
 				DAB28E971B93C84F0087C690 /* MyMadison */,
 				DAB28EB11B93C84F0087C690 /* MyMadisonTests */,
 				DAB28E961B93C84F0087C690 /* Products */,
@@ -573,12 +569,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyMadison/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paool.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Madison Mobile";
 				PROVISIONING_PROFILE = "";
@@ -591,12 +594,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyMadison/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paool.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Madison Mobile";
 				PROVISIONING_PROFILE = "";

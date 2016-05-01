@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "Flurry.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Flurry startSession:@"6W3JQGRG685JXZ2YCCSJ"];
     return YES;
 }
 

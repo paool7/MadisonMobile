@@ -7,16 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <iAd/iAd.h>
+@import SafariServices;
 
-@interface MainViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegate, UITableViewDataSource, UITableViewDelegate, UIWebViewDelegate, ADBannerViewDelegate>{
+@interface MainViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegate, UITableViewDataSource, UITableViewDelegate, UIWebViewDelegate, SFSafariViewControllerDelegate, UIViewControllerPreviewingDelegate>{
     NSMutableArray *array;
     NSMutableArray *array2;
     NSMutableArray *array3;
     NSMutableArray *array4;
     IBOutlet UICollectionView *collectv;
-    NSString *phone;
     NSString *stringer;
+    NSString *preview;
     IBOutlet UIWebView *web;
     IBOutlet UIImageView *dukedog;
 

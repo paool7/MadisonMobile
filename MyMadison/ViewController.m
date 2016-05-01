@@ -33,12 +33,18 @@
     
     if (connect == NULL) {
         self.navigationItem.title = @"Login";
-        UIAlertView *alert3 = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                         message:@"No internet Connection"
-                                                        delegate:self
-                                               cancelButtonTitle:@"OK"
-                                               otherButtonTitles:nil];
-        [alert3 show];
+        UIAlertController *alert =   [UIAlertController
+                                      alertControllerWithTitle:@"No Internet Connation"
+                                      message:nil
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel
+                                                       handler:^(UIAlertAction * action) {
+                                                           [alert dismissViewControllerAnimated:YES completion:nil];
+                                                       }];
+        [alert addAction:cancel];
+        
+        [self presentViewController:alert animated:YES completion:nil];
     } else{
     [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://login.jmu.edu"]]];
     [web setDelegate:self];
@@ -140,9 +146,20 @@
                 username.text = @"";
                 password.text = @"";
                 [username becomeFirstResponder];
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Sorry, the e-ID and password that you entered was not correct."  delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-                alert.alertViewStyle = UIAlertViewStyleDefault;
-                [alert show];
+                
+                UIAlertController *alert =   [UIAlertController
+                                              alertControllerWithTitle:@"Error"
+                                              message:@"Sorry, the e-ID and password that you entered was not correct."
+                                              preferredStyle:UIAlertControllerStyleAlert];
+                
+                UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel
+                                                               handler:^(UIAlertAction * action) {
+                                                                   [alert dismissViewControllerAnimated:YES completion:nil];
+                                                               }];
+                [alert addAction:cancel];
+                
+                [self presentViewController:alert animated:YES completion:nil];
+                
             }
             
         }
@@ -208,9 +225,20 @@
 
     if ([error  isEqual: @"Sorry, the e-ID and password that you entered was not correct. Please verify your information.  If this message persists, please try clicking the logout link and restarting your browser.  "]) {
         
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Sorry, the e-ID and password that you entered was not correct."  delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-        alert.alertViewStyle = UIAlertViewStyleDefault;
-        [alert show];
+        
+        UIAlertController *alert =   [UIAlertController
+                                      alertControllerWithTitle:@"Error"
+                                      message:@"Sorry, the e-ID and password that you entered was not correct."
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel
+                                                       handler:^(UIAlertAction * action) {
+                                                           [alert dismissViewControllerAnimated:YES completion:nil];
+                                                       }];
+        [alert addAction:cancel];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+        
         self.user = YES;
         self.pass = NO;
         self.quest = NO;
@@ -236,9 +264,19 @@
         self.sec = YES;
             [self.view setFrame:CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height)];
         [question becomeFirstResponder];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Incorrect answer. Please try again."  delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-        alert.alertViewStyle = UIAlertViewStyleDefault;
-        [alert show];
+
+        UIAlertController *alert =   [UIAlertController
+                                      alertControllerWithTitle:@"Error"
+                                      message:@"Incorrect answer. Please try again."
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel
+                                                       handler:^(UIAlertAction * action) {
+                                                           [alert dismissViewControllerAnimated:YES completion:nil];
+                                                       }];
+        [alert addAction:cancel];
+        
+        [self presentViewController:alert animated:YES completion:nil];
     }else{
     if (user) {
         username.enabled = YES;
