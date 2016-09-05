@@ -16,6 +16,7 @@
     NSMutableArray *organizationslink;
 
     IBOutlet UIWebView *web;
+    NSTimer *timeout;
     
     NSString *preview;
 

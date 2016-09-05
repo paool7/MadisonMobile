@@ -697,21 +697,60 @@
                         <color key="separatorColor" red="0.20784313730000001" green="0.01176470588" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.83921568629999999" green="0.79215686269999996" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="YH7-ec-ec9" style="IBUITableViewCellStyleDefault" id="k12-sW-RNY">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="k12-sW-RNY">
+                                <rect key="frame" x="0.0" y="92" width="600" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k12-sW-RNY" id="xLe-36-VHO">
-                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YH7-ec-ec9">
-                                            <rect key="frame" x="15" y="0.0" width="550" height="43"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pAX-kB-FNR">
+                                            <rect key="frame" x="8" y="5" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="FOv-VY-chG"/>
+                                                <constraint firstAttribute="height" constant="50" id="VSb-hm-ZyV"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIl-cl-rEn">
+                                            <rect key="frame" x="577" y="22" width="15" height="15"/>
+                                            <color key="backgroundColor" red="0.75294117647058822" green="0.22352941176470587" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="Ee6-kH-uDR"/>
+                                                <constraint firstAttribute="width" constant="15" id="lbN-xr-eTP"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1N-kN-Pge">
+                                            <rect key="frame" x="66" y="8" width="503" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="IzV-6J-WUU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLU-ws-Zqp">
+                                            <rect key="frame" x="66" y="34" width="503" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="OUa-Rp-inn"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="vIl-cl-rEn" secondAttribute="trailing" constant="8" id="97e-98-Erf"/>
+                                        <constraint firstItem="wLU-ws-Zqp" firstAttribute="leading" secondItem="pAX-kB-FNR" secondAttribute="trailing" constant="8" id="9rr-qn-G1J"/>
+                                        <constraint firstItem="N1N-kN-Pge" firstAttribute="leading" secondItem="pAX-kB-FNR" secondAttribute="trailing" constant="8" id="E2E-1N-eh8"/>
+                                        <constraint firstItem="N1N-kN-Pge" firstAttribute="top" secondItem="xLe-36-VHO" secondAttribute="top" constant="8" id="FSy-dJ-IIM"/>
+                                        <constraint firstItem="vIl-cl-rEn" firstAttribute="top" secondItem="xLe-36-VHO" secondAttribute="top" constant="22" id="S7m-hZ-Zol"/>
+                                        <constraint firstItem="vIl-cl-rEn" firstAttribute="leading" secondItem="N1N-kN-Pge" secondAttribute="trailing" constant="8" id="UQ4-Ws-yQx"/>
+                                        <constraint firstAttribute="trailing" secondItem="wLU-ws-Zqp" secondAttribute="trailing" constant="31" id="V0C-KZ-X8K"/>
+                                        <constraint firstAttribute="bottom" secondItem="vIl-cl-rEn" secondAttribute="bottom" constant="22" id="Wfb-th-hxq"/>
+                                        <constraint firstAttribute="bottom" secondItem="wLU-ws-Zqp" secondAttribute="bottom" constant="4" id="hmw-w3-3iM"/>
+                                        <constraint firstItem="pAX-kB-FNR" firstAttribute="centerY" secondItem="xLe-36-VHO" secondAttribute="centerY" id="yAf-kS-19K"/>
+                                        <constraint firstItem="pAX-kB-FNR" firstAttribute="leading" secondItem="xLe-36-VHO" secondAttribute="leading" constant="8" id="yWd-1X-lkl"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

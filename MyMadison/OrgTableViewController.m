@@ -18,6 +18,10 @@
     [super viewDidLoad];
     checkNum = 1;
     
+    if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
+        [self registerForPreviewingWithDelegate:(id)self sourceView:tabler];
+    }
+    
     NSString *connect = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"https://beinvolved.jmu.edu/organizations"] encoding:NSUTF8StringEncoding error:nil];
     
     if (connect == NULL) {
@@ -41,6 +45,7 @@
         
         [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://beinvolved.jmu.edu/organizations?SearchType=None&SelectedCategoryId=0&CurrentPage=1"]]];
         [web setDelegate:self];
+        timeout = [NSTimer scheduledTimerWithTimeInterval:20.0 target:self selector:@selector(restart) userInfo:nil repeats:NO];
     }
 }
 
@@ -83,7 +88,9 @@
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
     if ([[webView stringByEvaluatingJavaScriptFromString:@"document.readyState"] isEqualToString:@"complete"]) {
         NSLog(@"page: %i, count: %lu, num: %i",[[web stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.getElementById('pager').getElementsByClassName('currentPage')[0].textContent"]] intValue], (unsigned long)organizations.count, checkNum);
-
+        
+        if ([[web stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.getElementById('pager').getElementsByClassName('currentPage')[0].textContent"]] intValue] == checkNum) {
+        [timeout invalidate];
         if (checkNum <= 36) {
             [self performSelector:@selector(nextPage) withObject:nil];
         }
@@ -92,12 +99,26 @@
             dogview.hidden = YES;
             [dukedog stopAnimating];
         }
+            
+        } else {
+            [timeout invalidate];
+            [self performSelector:@selector(restart)];
+        }
+    } else if(organizations.count > 360) {
+        [timeout invalidate];
+        [web stopLoading];
     }
 }
 
-
+-(void)restart{
+    NSLog(@"Restarted");
+    [web stopLoading];
+    [timeout invalidate];
+     [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat: @"https:/beinvolved.jmu.edu/organizations?SearchType=None&SelectedCategoryId=0&CurrentPage=%i", checkNum]]]];
+}
 
 -(void)nextPage{
+    [timeout invalidate];
     for (int i = 0; i < 10; i++) {
         NSString *test = [web stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.getElementById('results').getElementsByClassName('result clearfix')[%d].getElementsByTagName('a')[0].textContent", i]];
         NSString *test2 = [web stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.getElementById('results').getElementsByClassName('result clearfix')[%d].getElementsByTagName('p')[0].textContent", i]];
@@ -113,6 +134,10 @@
     if (checkNum < 36) {
         checkNum++;
         [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat: @"https:/beinvolved.jmu.edu/organizations?SearchType=None&SelectedCategoryId=0&CurrentPage=%i", checkNum]]]];
+        timeout = [NSTimer scheduledTimerWithTimeInterval:20.0 target:self selector:@selector(restart) userInfo:nil repeats:NO];
+    } else {
+        [timeout invalidate];
+        [web stopLoading];
     }
     
 }
@@ -153,10 +178,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
-    if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
-        [self registerForPreviewingWithDelegate:(id)self sourceView:cell];
-    }
+
     
     cell.textLabel.text = [organizations objectAtIndex:indexPath.row];
     

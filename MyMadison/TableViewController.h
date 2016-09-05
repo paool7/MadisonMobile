@@ -23,6 +23,11 @@
     NSMutableArray *recreationArrayp;
     NSMutableArray *libraryArrayp;
     NSMutableArray *mailArrayp;
+    
+    NSMutableArray *dinHourDictionaries;
+    NSMutableArray *recHourDictionaries;
+    NSMutableArray *libHourDictionaries;
+    NSMutableArray *mailHourDictionaries;
 
 }
 

@@ -39,6 +39,8 @@
 		DA11C5E41B9E53A3001A01D6 /* starbucks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5CD1B9E53A3001A01D6 /* starbucks.jpg */; };
 		DA11C5E91B9E5870001A01D6 /* gatehouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5E81B9E5870001A01D6 /* gatehouse.jpg */; };
 		DA11C5EB1B9E5990001A01D6 /* urec.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DA11C5EA1B9E5990001A01D6 /* urec.jpeg */; };
+		DA4CC2881D7B8E8300C7CA28 /* dhub.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA4CC2871D7B8E8300C7CA28 /* dhub.jpg */; };
+		DA4CC28A1D7B8FA600C7CA28 /* fueled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA4CC2891D7B8FA600C7CA28 /* fueled.jpg */; };
 		DA61F4DE1BA237B500E60CC1 /* Carrier.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA61F4DD1BA237B500E60CC1 /* Carrier.jpg */; };
 		DA61F4E01BA2380600E60CC1 /* Memorial.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA61F4DF1BA2380600E60CC1 /* Memorial.jpg */; };
 		DA61F4E21BA2383B00E60CC1 /* Music.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA61F4E11BA2383B00E60CC1 /* Music.jpg */; };
@@ -107,6 +109,8 @@
 		DA11C5CD1B9E53A3001A01D6 /* starbucks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starbucks.jpg; sourceTree = "<group>"; };
 		DA11C5E81B9E5870001A01D6 /* gatehouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gatehouse.jpg; sourceTree = "<group>"; };
 		DA11C5EA1B9E5990001A01D6 /* urec.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = urec.jpeg; sourceTree = "<group>"; };
+		DA4CC2871D7B8E8300C7CA28 /* dhub.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dhub.jpg; sourceTree = "<group>"; };
+		DA4CC2891D7B8FA600C7CA28 /* fueled.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fueled.jpg; sourceTree = "<group>"; };
 		DA61F4DD1BA237B500E60CC1 /* Carrier.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Carrier.jpg; sourceTree = "<group>"; };
 		DA61F4DF1BA2380600E60CC1 /* Memorial.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Memorial.jpg; sourceTree = "<group>"; };
 		DA61F4E11BA2383B00E60CC1 /* Music.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Music.jpg; sourceTree = "<group>"; };
@@ -170,11 +174,13 @@
 				DA11C5B91B9E53A3001A01D6 /* chik.jpg */,
 				DA11C5BA1B9E53A3001A01D6 /* corner.jpg */,
 				DA11C5BB1B9E53A3001A01D6 /* dhall.jpg */,
+				DA4CC2871D7B8E8300C7CA28 /* dhub.jpg */,
 				DA11C5BC1B9E53A3001A01D6 /* dogpound.jpg */,
 				DA11C5BD1B9E53A3001A01D6 /* dunkin.jpg */,
 				DA11C5BE1B9E53A3001A01D6 /* ehall.jpg */,
 				DA11C5BF1B9E53A3001A01D6 /* einstein.jpg */,
 				DA11C5C01B9E53A3001A01D6 /* festival.jpg */,
+				DA4CC2891D7B8FA600C7CA28 /* fueled.jpg */,
 				DA11C5C11B9E53A3001A01D6 /* freshens.jpg */,
 				DA11C5C21B9E53A3001A01D6 /* grace.jpg */,
 				DA11C5C31B9E53A3001A01D6 /* java.jpg */,
@@ -377,6 +383,7 @@
 				DA11C5DA1B9E53A3001A01D6 /* java.jpg in Resources */,
 				DA11C5D91B9E53A3001A01D6 /* grace.jpg in Resources */,
 				DA11C5DE1B9E53A3001A01D6 /* market1.jpg in Resources */,
+				DA4CC2881D7B8E8300C7CA28 /* dhub.jpg in Resources */,
 				DA11C5D61B9E53A3001A01D6 /* einstein.jpg in Resources */,
 				DA11C5D11B9E53A3001A01D6 /* corner.jpg in Resources */,
 				DA11C5E91B9E5870001A01D6 /* gatehouse.jpg in Resources */,
@@ -387,6 +394,7 @@
 				DA11C5D71B9E53A3001A01D6 /* festival.jpg in Resources */,
 				DAB28EA91B93C84F0087C690 /* LaunchScreen.xib in Resources */,
 				DA11C5E41B9E53A3001A01D6 /* starbucks.jpg in Resources */,
+				DA4CC28A1D7B8FA600C7CA28 /* fueled.jpg in Resources */,
 				DA11C5E21B9E53A3001A01D6 /* pod.jpg in Resources */,
 				DA11C5DF1B9E53A3001A01D6 /* mrchips.jpg in Resources */,
 				DAB28EA61B93C84F0087C690 /* Images.xcassets in Resources */,
@@ -574,6 +582,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				IBC_ERRORS = NO;
+				IBC_NOTICES = NO;
+				IBC_WARNINGS = NO;
+				IBSC_ERRORS = NO;
+				IBSC_NOTICES = NO;
+				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = MyMadison/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -599,6 +613,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				IBC_ERRORS = NO;
+				IBC_NOTICES = NO;
+				IBC_WARNINGS = NO;
+				IBSC_ERRORS = NO;
+				IBSC_NOTICES = NO;
+				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = MyMadison/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

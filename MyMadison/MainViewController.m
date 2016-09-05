@@ -19,6 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
+        [self registerForPreviewingWithDelegate:(id)self sourceView:collectv];
+    }
+    
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
     
@@ -151,10 +155,6 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Celler" forIndexPath:indexPath];
     
-    if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
-        [self registerForPreviewingWithDelegate:(id)self sourceView:cell];
-    }
-    
     UIButton *button = (UIButton *)[cell viewWithTag:11];
     
     [button addTarget:self action:@selector(myClickEvent:event:) forControlEvents:UIControlEventTouchUpInside];
@@ -259,7 +259,7 @@
 
 
 - (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
-    
+
     NSIndexPath *indexPath = [collectv indexPathForItemAtPoint: location];
     
     preview = [array4 objectAtIndex:indexPath.row];
